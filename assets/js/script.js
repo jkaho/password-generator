@@ -9,10 +9,18 @@ function writePassword() {
   var specialCharacters = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
   var chosenCharacters = ""
   var chosenCharactersIndex = 0
-  var passwordLength = parseInt(prompt("How long do you want your password to be? Type in a numerical value between 8 to 128 (inclusive)."));
-  console.log(passwordLength);
-  if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
-      var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).");
+  
+  for (var i = 0; i < 1; i++) {
+      var passwordLength = parseInt(prompt("How long do you want your password to be? Type in a numerical value between 8 to 128 (inclusive)."));
+      console.log(passwordLength);
+      if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
+          var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).");
+          if (wrongLengthInput === true) {
+              i -= 1;
+          } else {
+            return;
+          }
+      }
   }
 
   var includeLowercase = confirm("Do you want to include lowercase characters in your password? Press 'OK' for yes and 'Cancel' for no.");
