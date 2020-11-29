@@ -35,6 +35,16 @@ function writePassword() {
   console.log(chosenCharacters);
   console.log(chosenCharactersIndex);
 
+  var includeNumbers = confirm("Do you want to include numbers in your password? Press 'OK' for yes and 'Cancel' for no.");
+  if (includeNumbers) {
+      chosenCharacters += numbers;
+  }
+  if (includeNumbers) {
+      chosenCharactersIndex += 10;
+  }
+  console.log(chosenCharacters);
+  console.log(chosenCharactersIndex);
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
