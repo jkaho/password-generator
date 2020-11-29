@@ -53,8 +53,12 @@ function writePassword() {
   if (includeSpecialCharacters) {
       chosenCharactersIndex += 33;
   }
+  if (includeLowercase === false && includeUppercase === false && includeNumbers === false && includeSpecialCharacters === false) {
+    var wrongCharacterInput= confirm("You must select at least one of the four character types."); 
+  }
   console.log(chosenCharacters);
   console.log(chosenCharactersIndex);
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
