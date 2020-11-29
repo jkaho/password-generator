@@ -25,6 +25,16 @@ function writePassword() {
   console.log(chosenCharacters);
   console.log(chosenCharactersIndex);
 
+  var includeUppercase = confirm("Do you want to include uppercase characters in your password? Press 'OK' for yes and 'Cancel' for no.");
+  if (includeUppercase) {
+      chosenCharacters += uppercase;
+  }
+  if (includeUppercase) {
+      chosenCharactersIndex += 26;
+  }
+  console.log(chosenCharacters);
+  console.log(chosenCharactersIndex);
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
