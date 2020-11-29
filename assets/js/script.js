@@ -11,7 +11,7 @@ function writePassword() {
   var chosenCharactersIndex = 0
   
   for (var i = 0; i < 1; i++) {
-    var passwordLength = parseInt(prompt("How long do you want your password to be? Type in a numerical value between 8 to 128 (inclusive)."));
+    var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 to 128 (inclusive)."));
     console.log(passwordLength);
     if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
       var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).");
@@ -24,7 +24,7 @@ function writePassword() {
   }
 
   for (var i = 0; i < 1; i++) {
-    var includeLowercase = confirm("Do you want to include lowercase characters in your password? Press 'OK' for yes and 'Cancel' for no.");
+    var includeLowercase = confirm("Do you want to include lowercase characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
     if (includeLowercase) {
       chosenCharacters += lowercase;
     }
@@ -34,7 +34,7 @@ function writePassword() {
     console.log(chosenCharacters);
     console.log(chosenCharactersIndex);
 
-    var includeUppercase = confirm("Do you want to include uppercase characters in your password? Press 'OK' for yes and 'Cancel' for no.");
+    var includeUppercase = confirm("Do you want to include uppercase characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
     if (includeUppercase) {
       chosenCharacters += uppercase;
     }
@@ -44,7 +44,7 @@ function writePassword() {
     console.log(chosenCharacters);
     console.log(chosenCharactersIndex);
 
-    var includeNumbers = confirm("Do you want to include numbers in your password? Press 'OK' for yes and 'Cancel' for no.");
+    var includeNumbers = confirm("Do you want to include numbers in your password?\nPress 'OK' for yes and 'Cancel' for no.");
     if (includeNumbers) {
       chosenCharacters += numbers;
     }
@@ -54,7 +54,7 @@ function writePassword() {
     console.log(chosenCharacters);
     console.log(chosenCharactersIndex);
 
-    var includeSpecialCharacters = confirm("Do you want to include special characters in your password? Press 'OK' for yes and 'Cancel' for no.");
+    var includeSpecialCharacters = confirm("Do you want to include special characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
     if (includeSpecialCharacters) {
       chosenCharacters += specialCharacters;
     }
