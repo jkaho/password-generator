@@ -13,6 +13,10 @@ function writePassword() {
       var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).");
   }
 
+  var chosenCharacters = ""
+  var chosenCharactersIndex = 0
+
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
