@@ -59,6 +59,14 @@ function writePassword() {
   console.log(chosenCharacters);
   console.log(chosenCharactersIndex);
 
+  function generatePassword() {
+    var createPassword = "";
+    for (var i = 0; i < passwordLength; i++) {
+        createPassword += chosenCharacters.charAt(Math.floor(Math.random() * chosenCharactersIndex));
+    }
+    console.log(createPassword);
+    return createPassword;
+    }
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
