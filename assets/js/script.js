@@ -14,13 +14,13 @@ function writePassword() {
     var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 to 128 (inclusive)."));
     console.log(passwordLength);
     if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
-      var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).");
+      var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).\nPress 'OK' to continue and 'Cancel' to exit.");
       if (wrongLengthInput === true) {
         i -= 1;
       } else {
         return;
       }
-    }
+    } 
   }
 
   for (var i = 0; i < 1; i++) {
@@ -62,7 +62,7 @@ function writePassword() {
       chosenCharactersIndex += 33;
     }
     if (includeLowercase === false && includeUppercase === false && includeNumbers === false && includeSpecialCharacters === false) {
-      var wrongCharacterInput= confirm("You must select at least one of the four character types."); 
+      var wrongCharacterInput= confirm("You must select at least one of the four character types.\nPress 'OK' to continue and 'Cancel' to exit."); 
       if (wrongCharacterInput === true) {
         i -= 1;
       }
