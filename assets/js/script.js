@@ -89,7 +89,7 @@ function writePassword() {
 
 function copyPassword() {
   passwordText.select();
-  passwordText.setSelectionRange(0, 99999);
+  passwordText.setSelectionRange(0, 128);
 
   document.execCommand("copy");
 
