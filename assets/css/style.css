@@ -123,6 +123,14 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
