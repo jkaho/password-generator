@@ -88,6 +88,10 @@ header {
   cursor: pointer;
 }
 
+.secondary-btn {
+  background-color: rgb(23, 39, 213);
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
