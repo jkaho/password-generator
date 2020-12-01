@@ -1,4 +1,4 @@
-// Assignment Code
+// Global variables
 var generateBtn = document.querySelector("#generate");
 var passwordText = document.querySelector("#password");
 var copyBtn = document.querySelector("#copy");
@@ -12,6 +12,7 @@ function writePassword() {
   var chosenCharacters = ""
   var chosenCharactersIndex = 0
   
+  // Prompt user for password length
   for (var i = 0; i < 1; i++) {
     var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 to 128 (inclusive)."));
     console.log(passwordLength);
@@ -24,7 +25,8 @@ function writePassword() {
       }
     } 
   }
-
+  
+  // Confirm character types to be included in password
   for (var i = 0; i < 1; i++) {
     var includeLowercase = confirm("Do you want to include lowercase characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
     if (includeLowercase) {
@@ -73,6 +75,7 @@ function writePassword() {
     console.log(chosenCharactersIndex);
   }
 
+  // Create password from chosen character types
   function generatePassword() {
     var createPassword = "";
     for (var i = 0; i < passwordLength; i++) {
@@ -84,9 +87,11 @@ function writePassword() {
 
   var password = generatePassword();
 
+  // Write password to textbox 
   passwordText.value = password;
 }
 
+// Copy textbox value (password) to clipboard
 function copyPassword() {
   passwordText.select();
   passwordText.setSelectionRange(0, 128);
