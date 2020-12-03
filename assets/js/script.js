@@ -17,7 +17,7 @@ function writePassword() {
     var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 to 128 (inclusive)."));
     console.log(passwordLength);
     if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
-      var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).\nPress 'OK' to continue and 'Cancel' to exit.");
+      var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).\nPress 'OK' to continue or 'Cancel' to exit.");
       if (wrongLengthInput === true) {
         i -= 1;
       } else {
@@ -28,7 +28,7 @@ function writePassword() {
   
   // Confirm character types to be included in password
   for (var i = 0; i < 1; i++) {
-    var includeLowercase = confirm("Do you want to include lowercase characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
+    var includeLowercase = confirm("Do you want to include lowercase characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeLowercase) {
       chosenCharacters += lowercase;
     }
@@ -38,7 +38,7 @@ function writePassword() {
     console.log(chosenCharacters);
     console.log(chosenCharactersIndex);
 
-    var includeUppercase = confirm("Do you want to include uppercase characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
+    var includeUppercase = confirm("Do you want to include uppercase characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeUppercase) {
       chosenCharacters += uppercase;
     }
@@ -48,7 +48,7 @@ function writePassword() {
     console.log(chosenCharacters);
     console.log(chosenCharactersIndex);
 
-    var includeNumbers = confirm("Do you want to include numbers in your password?\nPress 'OK' for yes and 'Cancel' for no.");
+    var includeNumbers = confirm("Do you want to include numbers in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeNumbers) {
       chosenCharacters += numbers;
     }
@@ -58,7 +58,7 @@ function writePassword() {
     console.log(chosenCharacters);
     console.log(chosenCharactersIndex);
 
-    var includeSpecialCharacters = confirm("Do you want to include special characters in your password?\nPress 'OK' for yes and 'Cancel' for no.");
+    var includeSpecialCharacters = confirm("Do you want to include special characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeSpecialCharacters) {
       chosenCharacters += specialCharacters;
     }
@@ -66,7 +66,7 @@ function writePassword() {
       chosenCharactersIndex += 33;
     }
     if (includeLowercase === false && includeUppercase === false && includeNumbers === false && includeSpecialCharacters === false) {
-      var wrongCharacterInput= confirm("You must select at least one of the four character types.\nPress 'OK' to continue and 'Cancel' to exit."); 
+      var wrongCharacterInput= confirm("You must select at least one of the four character types.\nPress 'OK' to continue or 'Cancel' to exit."); 
       if (wrongCharacterInput === true) {
         i -= 1;
       }
