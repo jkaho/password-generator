@@ -27,7 +27,7 @@ function writePassword() {
   
   // Confirm character types to be included in password
   for (var i = 0; i < 1; i++) {
-    var includeLowercase = confirm("Do you want to include lowercase characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
+    var includeLowercase = confirm("Do you want to include LOWERCASE CHARACTERS in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeLowercase) {
       chosenCharacters += lowercase;
     }
@@ -35,7 +35,7 @@ function writePassword() {
       chosenCharactersIndex += 26;
     }
 
-    var includeUppercase = confirm("Do you want to include uppercase characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
+    var includeUppercase = confirm("Do you want to include UPPERCASE CHARACTERS in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeUppercase) {
       chosenCharacters += uppercase;
     }
@@ -43,7 +43,7 @@ function writePassword() {
       chosenCharactersIndex += 26;
     }
 
-    var includeNumbers = confirm("Do you want to include numbers in your password?\nPress 'OK' for yes or 'Cancel' for no.");
+    var includeNumbers = confirm("Do you want to include NUMBERS in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeNumbers) {
       chosenCharacters += numbers;
     }
@@ -51,7 +51,7 @@ function writePassword() {
       chosenCharactersIndex += 10;
     }
 
-    var includeSpecialCharacters = confirm("Do you want to include special characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
+    var includeSpecialCharacters = confirm("Do you want to include SPECIAL CHARACTERS in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeSpecialCharacters) {
       chosenCharacters += specialCharacters;
     }
