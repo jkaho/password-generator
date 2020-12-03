@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the source code for a password-generating web application. When the 'Generate Password' button is clicked, the user is required to answer a series of prompts to determine the password criteria before the password is generated and displayed in the textbox. There is also a 'Copy Password' button that allows the user to easily copy the generated password to their clipboard. 
+This repository contains the source code for a password-generating web application. When the 'Generate Password' button is clicked, the user is required to answer a series of prompts to determine the password criteria (password length and character types to be included) before the password is generated and displayed in the textbox. There is also a 'Copy Password' button that allows the user to easily copy the generated password to their clipboard. 
 
 ## Screenshot
 
