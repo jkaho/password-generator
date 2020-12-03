@@ -15,7 +15,6 @@ function writePassword() {
   // Prompt user for password length
   for (var i = 0; i < 1; i++) {
     var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 to 128 (inclusive)."));
-    console.log(passwordLength);
     if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
       var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).\nPress 'OK' to continue or 'Cancel' to exit.");
       if (wrongLengthInput === true) {
@@ -35,8 +34,6 @@ function writePassword() {
     if (includeLowercase) {
       chosenCharactersIndex += 26;
     }
-    console.log(chosenCharacters);
-    console.log(chosenCharactersIndex);
 
     var includeUppercase = confirm("Do you want to include uppercase characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeUppercase) {
@@ -45,8 +42,6 @@ function writePassword() {
     if (includeUppercase) {
       chosenCharactersIndex += 26;
     }
-    console.log(chosenCharacters);
-    console.log(chosenCharactersIndex);
 
     var includeNumbers = confirm("Do you want to include numbers in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeNumbers) {
@@ -55,8 +50,6 @@ function writePassword() {
     if (includeNumbers) {
       chosenCharactersIndex += 10;
     }
-    console.log(chosenCharacters);
-    console.log(chosenCharactersIndex);
 
     var includeSpecialCharacters = confirm("Do you want to include special characters in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeSpecialCharacters) {
@@ -71,8 +64,6 @@ function writePassword() {
         i -= 1;
       }
     }
-    console.log(chosenCharacters);
-    console.log(chosenCharactersIndex);
   }
 
   // Create password from chosen character types
@@ -81,7 +72,7 @@ function writePassword() {
     for (var i = 0; i < passwordLength; i++) {
       createPassword += chosenCharacters.charAt(Math.floor(Math.random() * chosenCharactersIndex));
     }
-    console.log(createPassword);
+
     return createPassword;
   }
 
