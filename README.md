@@ -12,4 +12,4 @@ This is a screenshot of the deployed web application.
 
 ## Link
 
-[Link to deployed application](https://jkaho.github.io/password-generator)
+[Link to deployed application](https://jkaho.github.io/password-generator/)
