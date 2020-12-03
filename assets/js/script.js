@@ -14,7 +14,7 @@ function writePassword() {
   
   // Prompt user for password length
   for (var i = 0; i < 1; i++) {
-    var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 to 128 (inclusive)."));
+    var passwordLength = parseInt(prompt("How long do you want your password to be?\nType in a numerical value between 8 and 128 (inclusive)."));
     if (isNaN(passwordLength) === true || passwordLength < 8 || passwordLength > 128) { 
       var wrongLengthInput = confirm("Must input a numerical value between 8 and 128 (inclusive).\nPress 'OK' to continue or 'Cancel' to exit.");
       if (wrongLengthInput === true) {
@@ -28,7 +28,7 @@ function writePassword() {
   // Confirm character types to be included in password
   for (var i = 0; i < 1; i++) {
     alert("Please select at least one of the following four character types.");
-    
+
     var includeLowercase = confirm("Do you want to include LOWERCASE CHARACTERS in your password?\nPress 'OK' for yes or 'Cancel' for no.");
     if (includeLowercase) {
       chosenCharacters += lowercase;
