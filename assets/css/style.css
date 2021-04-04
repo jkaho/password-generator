@@ -76,6 +76,27 @@ header {
   clear: both;
 } */
 
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;   
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #dddedf;
+  border-radius: 4px;
+  resize: none;
+  overflow: hidden;
+}
+
 .btn {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -122,27 +143,6 @@ button[disabled] {
   float: right;
 }
 
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #dddedf;
-  border-radius: 4px;
-  resize: none;
-  overflow: hidden;
-}
-
 footer {
   text-align: center;
   height: 30px;
@@ -154,7 +154,29 @@ footer a {
   text-decoration: none;
 }
 
+/* ------- MEDIA QUERIES ------- */
+
+@media (max-width: 800px) and (min-width: 690px) {
+  #logo-img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+    #logo-img {
+      height: 100px;
+    }
+  
+    .btn {
+      width: 150px;
+    }
+  }
+
 @media (max-width: 690px) {
+  #logo-img {
+    height: 80px;
+  }
+
   h1 {
     font-size: 25px;
   }
@@ -162,6 +184,11 @@ footer a {
   h2 {
     font-size: 20px;
     text-align: center;
+  }
+
+  .card { 
+    width: 90%;
+    padding: 20px 20px 30px 20px;
   }
   
   .btn {
