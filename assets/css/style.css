@@ -142,6 +142,17 @@ button[disabled] {
   overflow: hidden;
 }
 
+footer {
+  text-align: center;
+  height: 30px;
+}
+
+footer a {
+  font-weight: 300;
+  color: grey;
+  text-decoration: none;
+}
+
 @media (max-width: 690px) {
   h1 {
     font-size: 25px;
