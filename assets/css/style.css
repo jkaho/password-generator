@@ -58,6 +58,7 @@ header {
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
 }
+
 .card-footer {
   text-align: center;
 }
@@ -170,7 +171,7 @@ footer a {
     .btn {
       width: 150px;
     }
-  }
+}
 
 @media (max-width: 690px) {
   #logo-img {
