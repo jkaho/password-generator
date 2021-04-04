@@ -13,12 +13,11 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: 'Rubik', sans-serif;
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 120px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -30,66 +29,87 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
-.card {
+.card { 
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  border: solid 3px black;
+  box-shadow: 16px 16px rgb(147, 78, 226), -1em -12px rgb(213, 203, 224);
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  margin: 20px auto;
+  width: 75%;
+  max-width: 600px;
+  padding: 20px 40px 30px 40px;
 }
 
-.card-header::after {
+/* .card-header::after {
   content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
-}
+} */
 
 .card-body {
   min-height: 100px;
 }
 
+.card-body textarea {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
 .card-footer {
   text-align: center;
 }
 
 .card-footer::before {
-  content: " ";
-  display: block;
+  /* content: " ";
+  display: block; */
   width: 100%;
   background: #e7e9eb;
   height: 2px;
 }
 
-.card-footer::after {
+/* .card-footer::after {
   content: " ";
   display: block;
   clear: both;
-}
+} */
 
 .btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  border-radius: 30px;
+  border: solid 2px black;
+  background-color: rgb(147, 78, 226);
+  color: white;
   display: inline-block;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  width: 220px;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  margin: 10px 5px 10px 10px;
 }
 
 .secondary-btn {
-  background-color: rgb(23, 39, 213);
+  color: black;
+  border: solid 2px black;
+  background-color: rgb(213, 203, 224);
+  margin: 10px 10px 10px 5px;
+}
+
+#generate:hover {
+  background-color: rgb(45, 39, 126);
+}
+
+#copy:hover {
+  background-color: rgb(45, 39, 126);
+  color: white;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 button[disabled] {
@@ -116,8 +136,8 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
+  border: 2px solid #dddedf;
+  border-radius: 4px;
   resize: none;
   overflow: hidden;
 }
